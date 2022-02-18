@@ -5,6 +5,7 @@ This module simply prints a nice message when executed."""
 
 
 import os
+import sys
 
 
 def say_hi():
@@ -15,3 +16,4 @@ def say_hi():
 
 if __name__ == "__main__":
     say_hi()
+    sys.exit(0)
