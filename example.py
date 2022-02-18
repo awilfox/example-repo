@@ -10,7 +10,7 @@ import os
 def say_hi():
     """Say hello to the user."""
     user = os.environ.get('USER', 'world')
-    print("Hello, %s!" % user)
+    print(f"Hello, {user}!")
 
 
 if __name__ == "__main__":
