@@ -4,9 +4,13 @@
 This module simply prints a nice message when executed."""
 
 
+import os
+
+
 def say_hi():
     """Say hello to the user."""
-    print("Hello, world!")
+    user = os.environ.get('USER', 'world')
+    print("Hello, %s!" % user)
 
 
 if __name__ == "__main__":
